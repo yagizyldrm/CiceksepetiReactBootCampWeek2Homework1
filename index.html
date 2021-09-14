@@ -9,6 +9,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Deneme Dosya</h1>
+    <header>
+        <div class="header">   
+                <img class="logo" src="R1FFX4.jpg" alt="logo">
+            <div class="search-bar">
+                <input class="textinput" type="text" id="searchBar" name="search" placeholder="Search">
+                <img class="search-icon" src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png" ></i>
+            </div>
+                <img class="avatar" src="https://i.picsum.photos/id/267/200/200.jpg?hmac=Y1nyfMYjg-MPsZP0aKx1TqI1ogQRSYtHkM5kpZpybqk" /> 
+        </div>
+    </header>
+    <div class="sidebarButtonContainer">
+        <button id="buton" class="sidebarButton" onclick="myFunction()">
+            SIDEBAR
+        </button>
+    </div>
+    <sidebar>
+        <div id="saydbar" class="sidebar">
+            <ul class="sidebar-menu-list d-flex flex-direction-column">
+                <li class="sidebar-menu-item">
+                    <a href="" class="sidebar-menu-link">
+                        <i class="far fa-address-card"></i>
+                        <span class="sidebarSpan">Adress Cart</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="" class="sidebar-menu-link">
+                        <i class="fab fa-airbnb"></i>
+                        <span class="sidebarSpan">Air Bnb</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="" class="sidebar-menu-link d-flex">
+                        <i class="fas fa-balance-scale"></i>
+                        <span class="sidebarSpan">Balance Scale</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </sidebar>
+    <div class="formWithGrid">
+        <form action="submit">
+            <div><label for="company">Company:</label><input id="company" type="text"></div>
+            <div><label for="name">Name:</label><input id="name" type="text"></div>
+            <div><label for="surname">Surname:</label><input id="surname" type="text"></div>
+            <div><label for="age">Age:</label><input id="age" type="text"></div>
+            <div><label for="city">City:</label><input id="city" type="text"></div><br>
+            <div><label for="session">Training Session Date Picking</label></div>
+            <select name="dates" id="session">
+                <option value="a1">01/01/2017</option>
+                <option value="a2">01/01/2018</option>
+                <option value="a3">01/01/2019</option>
+                <option value="a4">01/01/2020</option>
+            </select><BR>
+            <button class="formButton">SUBMIT</button>
+        </form>
+    </div>
 </body>
 </html>

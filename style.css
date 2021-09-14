@@ -1,0 +1,165 @@
+:root{
+    --lightpink: rgb(255, 198, 198);
+    --darkpink: rgb(136, 50, 50);
+    --white: #fff;
+    --logoColor: #CF0A2C
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border-bottom: 4px solid var(--darkpink);
+    padding: 10px 0;
+    align-items: center;
+    height: 75px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.search-bar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0 0 0 1.2rem;
+    margin:0 20px;
+    flex-wrap: wrap;
+    
+}
+
+.search-bar > .textinput {
+    border-radius: 20px;
+    width: 100½;
+    flex-basis: 1200px;
+    height: 40px;
+    padding-left: 40px;
+    min-width: 135px;
+    max-width: 1200px;
+
+}
+
+.search-bar > .search-icon {
+    position: absolute;
+    left: 15px;
+    align-self: center;
+    margin: 0px 15px;
+    color: var(--lightpink);
+    width: 20px;
+    height: 20px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.sidebarButtonContainer {
+    position: absolute;
+    left: 70px;
+    top: 80px;
+    margin:10px 0 20px 0;
+}
+.sidebarButton {
+    color: white;
+    background-color: var(--logoColor);
+    border-radius: 10px;
+    padding: 0 5px 0 5px;
+}
+
+.sidebar {
+    width: 210px;
+    height: 220px;
+    display: none;
+    float: left;
+    background-color: var(--white);
+    border-right: 3px solid var(--darkpink); 
+    margin-right: 10px;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+    margin-top: 20px;
+    
+  }
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .flex-direction-column {
+    flex-direction: column;
+  }
+  .sidebar-menu-list {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .sidebar-menu-item {
+    margin: 2.5px 0;
+    width: 178px;
+    padding: 10px 0;
+    border: 1px solid var(--white);
+    display: flex;
+    border: 2px solid rgb(136, 50, 50) ;
+    justify-content: space-between;
+    border-radius: 20px;
+  }
+  a {
+    text-decoration-color: linear-gradient(90deg, black, rgb(136, 50, 50));
+    }
+  .sidebar-menu-link {
+    padding-left: 0.5rem;
+  }
+  
+  .sidebar-menu-link i {
+    margin-right: 1rem;
+    color: var(--logoColor);
+  }
+  .sidebarSpan {
+      background-image: linear-gradient(90deg, black, rgb(136, 50, 50));
+      background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+  }
+
+  form {
+      margin: 40px 20px 0 10px;
+      background-color: var(--white);
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      border-right: 3px solid var(--darkpink);
+      margin-right: 5px;
+      padding-right: 5px;
+      align-content: space-around;
+      margin:auto;
+      margin-left: 10px;
+      margin-top: 40px;
+
+      display: flex;
+      
+  }
+  form > div {
+      justify-content: space-between;
+      display: flex;
+      margin-top:5px;
+      color: var(--darkpink);
+      font-weight: bold;
+  }
+  .formButton {
+      background-color: var(--darkpink);
+      color: var(--white);
+  }
