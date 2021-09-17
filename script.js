@@ -11,8 +11,9 @@ const search = document.querySelector(".textinput");
 const form = document.querySelector(".formdiv");
 const searchBar = document.querySelector(".search-bar");
 
+//Creating an empty array so we can fill it with API
 let responseData = [];
-
+// Fetching data
 fetch("https://jsonplaceholder.typicode.com/posts", initializedObject)
   .then((response) => response.json())
   .then((data) => {
@@ -20,7 +21,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", initializedObject)
     console.log(data);
     getCardsListed(data);
 });
-
+//Listing the data which we got from API
 const getCardsListed = (data) => {
   let numberOfCards = 0;
   for (i = 0; i< data.length; i++){
@@ -52,7 +53,7 @@ const getCardsListed = (data) => {
   }
 };
 
-
+//Search Bar Functionalty adding
 const updatedValue = () =>{
   let searchedValue = search.value.toLowerCase();
 
@@ -86,6 +87,8 @@ function myFunction() {
 //   }
 // };
 
+
+//Form and Card Showing Buttons Adding
 const showFormButton = document.querySelector(".sidebarFormButton");
 const showCardsButton = document.querySelector(".sidebarCardButton");
 
