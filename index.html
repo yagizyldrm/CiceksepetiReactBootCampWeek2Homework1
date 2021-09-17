@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FirstJavaScriptTry</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="header">   
@@ -26,29 +27,20 @@
     </div>
     <sidebar>
         <div id="saydbar" class="sidebar">
-            <ul class="sidebar-menu-list d-flex flex-direction-column">
-                <li class="sidebar-menu-item">
-                    <a href="" class="sidebar-menu-link">
-                        <i class="far fa-address-card"></i>
-                        <span class="sidebarSpan">Adress Cart</span>
-                    </a>
-                </li>
-                <li class="sidebar-menu-item">
-                    <a href="" class="sidebar-menu-link">
-                        <i class="fab fa-airbnb"></i>
-                        <span class="sidebarSpan">Air Bnb</span>
-                    </a>
-                </li>
-                <li class="sidebar-menu-item">
-                    <a href="" class="sidebar-menu-link d-flex">
-                        <i class="fas fa-balance-scale"></i>
-                        <span class="sidebarSpan">Balance Scale</span>
-                    </a>
-                </li>
-            </ul>
+            <li class="sidebar-menu-list d-flex flex-direction-column">
+                <div class="sidebar-menu-item">
+                    <button id="formButton" class="sidebarFormButton" onclick= showform >FORM</button>
+                </div>
+                <div class="sidebar-menu-item">
+                    <button class="sidebarCardButton">CARDS</button>
+                </div>
+                
+            </li>
         </div>
     </sidebar>
+    <formAndGrid>
     <div class="formWithGrid">
+        <div id="formContainer" class="formdiv">
         <form action="submit">
             <div><label for="company">Company:</label><input id="company" type="text"></div>
             <div><label for="name">Name:</label><input id="name" type="text"></div>
@@ -64,6 +56,10 @@
             </select><BR>
             <button class="formButton">SUBMIT</button>
         </form>
-    </div>
+        </div>
+        <div class="grid-container">
+            
+        </div>
+    </formAndGrid>
 </body>
 </html>
